@@ -1,245 +1,257 @@
-SDOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="none">
-    <meta http-equiv="refresh" content="505">
-    <title>Joshue Emmanuel🤳</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-
-     <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="style.css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <title>Joe Viral | Maintenance Mode</title>
 
   <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#050816;
+      overflow:hidden;
+      color:white;
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      position:relative;
+    }
+
+    /* ANIMATED BACKGROUND */
+
+    .stars{
+      position:absolute;
+      width:100%;
+      height:100%;
+      overflow:hidden;
+      z-index:-1;
+    }
+
+    .star{
+      position:absolute;
+      width:2px;
+      height:80px;
+      background:linear-gradient(transparent,#00d9ff);
+      opacity:.7;
+      animation:fall linear infinite;
+    }
+
+    @keyframes fall{
+      from{
+        transform:translateY(-100px);
+      }
+      to{
+        transform:translateY(120vh);
+      }
+    }
+
+    /* MAIN BOX */
+
+    .container{
+      width:90%;
+      max-width:800px;
+      padding:60px 40px;
+      text-align:center;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.1);
+      backdrop-filter:blur(15px);
+      border-radius:30px;
+      box-shadow:0 0 40px rgba(0,217,255,0.2);
+      animation:float 4s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%,100%{
+        transform:translateY(0px);
+      }
+      50%{
+        transform:translateY(-10px);
+      }
+    }
+
+    .icon{
+      font-size:90px;
+      margin-bottom:20px;
+      animation:pulse 2s infinite;
+    }
+
+    @keyframes pulse{
+      0%{
+        transform:scale(1);
+      }
+      50%{
+        transform:scale(1.1);
+      }
+      100%{
+        transform:scale(1);
+      }
+    }
+
+    h1{
+      font-size:55px;
+      margin-bottom:20px;
+      color:#00d9ff;
+    }
+
+    p{
+      font-size:18px;
+      line-height:1.9;
+      color:#d6d6d6;
+      margin-bottom:40px;
+    }
+
+    /* LOADER */
+
+    .loader{
+      width:80px;
+      height:80px;
+      margin:0 auto 35px;
+      border:6px solid rgba(255,255,255,0.1);
+      border-top:6px solid #00d9ff;
+      border-radius:50%;
+      animation:spin 1s linear infinite;
+    }
+
+    @keyframes spin{
+      100%{
+        transform:rotate(360deg);
+      }
+    }
+
+    /* SOCIALS */
+
+    .socials{
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .socials a{
+      text-decoration:none;
+      color:white;
+      padding:14px 24px;
+      border-radius:40px;
+      background:#0e1326;
+      transition:.3s;
+      border:1px solid rgba(255,255,255,0.1);
+      font-weight:500;
+    }
+
+    .socials a:hover{
+      background:#00d9ff;
+      color:#000;
+      transform:translateY(-5px);
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      .container{
+        padding:40px 25px;
+      }
+
+      h1{
+        font-size:38px;
+      }
+
+      p{
+        font-size:15px;
+      }
+
+      .icon{
+        font-size:70px;
+      }
+
+    }
+
+  </style>
 </head>
+
 <body>
-    
-
-  <!-- WELCOME POPUP -->
-
-  <div class="welcome-popup">
-    Welcome to Joshua Emmanuel Portfolio
-  </div>
 
   <!-- STARS -->
 
   <div class="stars" id="stars"></div>
 
-  <!-- NAVBAR -->
+  <!-- MAIN CONTENT -->
 
-  <nav>
-    <h2>Joshua.</h2>
+  <div class="container">
 
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#showcase">Projects</a></li>
-      <li><a href="#videos">Videos</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <div class="icon">🚧</div>
 
-  <!-- HERO -->
+    <h1>Site Under Maintenance</h1>
 
-  <section class="hero">
+    <div class="loader"></div>
 
-    <div class="hero-text">
+    <p>
+      Sorry for the inconvenience.<br><br>
 
-      <h1>
-        Creative UI/UX <br>
-        Design, Graphic designer <span>& Developer</span>
-      </h1>
+      We are currently upgrading the Joe Viral portfolio website
+      to deliver a better and more premium experience.<br><br>
 
-      <p>
-        I create modern, interactive and premium user experiences
-        with beautiful animations and professional responsive designs.
-      </p>
+      Please check back soon.
+    </p>
 
-      <div class="btns">
-        <a href="#contact" class="btn primary">Hire Me</a>
+    <div class="socials">
 
-        <a href="https://www.fiverr.com/" target="_blank"
-          class="btn secondary">
-          Fiverr Profile
-        </a>
-      </div>
-
-    </div>
-
-    <div class="hero-image">
-      <img src="pro.jpg" alt="Joshua Emmanuel">
-    </div>
-
-  </section>
-
-  <!-- ABOUT -->
-
-  <section id="about">
-
-    <div class="title">
-      <h2>About Me</h2>
-    </div>
-
-    <div class="about">
-
-      <div class="card">
-        <i class="fa-solid fa-user"></i>
-        <h3>Hello</h3>
-        <p>
-          I'm Joshua Emmanuel, i specialize in high-quality visual desins and 
-          professional document management. With experince in direct Imaging (DI)printing and
-          academic document formatting, i ensure  your project are both creative and technically perfect.
-          A Frontend web Developer.✔ 
-        </p>
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-code"></i>
-        <h3>Frontend Skills</h3>
-        <p>
-          HTML, CSS, JavaScript, Motion Effects,
-          Responsive Design and Interactive Web Experiences.
-        </p>
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-layer-group"></i>
-        <h3>Creative Design</h3>
-        <p>
-          Modern interfaces, user research, Banner, Logo, Flyers, Social medial flyer post,
-          clean layout and futuristic portfolio experiences.
-        </p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- SERVICES -->
-
-  <section id="services">
-
-    <div class="title">
-      <h2>My Services</h2>
-    </div>
-
-    <div class="services">
-
-      <div class="card">
-        <i class="fa-solid fa-pen-ruler"></i>
-        <h3>Graphic</h3>
-        <p>Di-printing, Large-formate printing and interface designs.</p>
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-laptop-code"></i>
-        <h3>Web Development</h3>
-        <p>Professional responsive websites with animations.</p>
-      </div>
-
-      <div class="card">
-        <i class="fa-solid fa-mobile-screen-button"></i>
-        <h3>Mobile UI</h3>
-        <p>Creative app screens and premium user experiences.</p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- SHOWCASE -->
-
-  <section id="showcase">
-
-    <div class="title">
-      <h2>Project Showcase</h2>
-    </div>
-
-    <div class="showcase">
-
-      <div class="slider">
-
-        <img src="yu.jpg">
-        <img src="yu1.jpg">
-        <img src="yu2.jpg">
-        <img src="fon.jpg">
-        <img src="ball.jpg">
-
-        <img src="image1.jpg">
-        <img src="image2.jpg">
-        <img src="image3.jpg">
-        <img src="image4.jpg">
-        <img src="image5.jpg">
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- VIDEOS -->
-
-  <<section id="videos">
-
-  <div class="title">
-    <h2>My Videos</h2>
-  </div>
-
-  <div class="video-box">
-
-    <a href="https://vt.tiktok.com/ZSxMEMobL/"
-       target="_blank"
-       style="display:inline-block; padding:20px 40px; background:#00d9ff; color:#000; border-radius:20px; text-decoration:none; font-weight:600;">
-       ▶️ Watch My TikTok Video
-    </a>
-
-  </div>
-
-</section>
-
-  <!-- CONTACT -->
-
-  <section id="contact">
-
-    <div class="title">
-      <h2>Contact Me</h2>
-    </div>
-
-    <div class="contact-box">
-
-      <a href="je675594@gmail.com">
-        <i class="fa-solid fa-envelope"></i>
-        Email Me
-      </a>
-
-      <a href="https://wa.me/2347072469903" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
+      <a href="https://wa.me/234XXXXXXXXXX" target="_blank">
         WhatsApp
       </a>
 
-      <a href="tel:+2347072469903">
-        <i class="fa-solid fa-phone"></i>
-        Call Me
+      <a href="https://www.instagram.com/" target="_blank">
+        Instagram
+      </a>
+
+      <a href="https://www.tiktok.com/" target="_blank">
+        TikTok
       </a>
 
     </div>
 
-  </section>
-
-  <footer>
-    © 2026 Joshua Emmanuel Portfolio | All Rights Reserved
-  </footer>
-
-  <!-- TOGGLE -->
-
-  <div class="toggle" id="toggle">
-    <i class="fa-solid fa-moon"></i>
   </div>
 
-  <script src="script.js"></script>
-  
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    // STAR EFFECT
+
+    const stars = document.getElementById("stars");
+
+    for(let i = 0; i < 120; i++){
+
+      let star = document.createElement("div");
+
+      star.classList.add("star");
+
+      star.style.left = Math.random() * window.innerWidth + "px";
+
+      star.style.animationDuration =
+      Math.random() * 3 + 2 + "s";
+
+      star.style.opacity = Math.random();
+
+      star.style.height =
+      Math.random() * 100 + 50 + "px";
+
+      stars.appendChild(star);
+    }
+
+  </script>
+
 </body>
-</html>
+</html>ml>
